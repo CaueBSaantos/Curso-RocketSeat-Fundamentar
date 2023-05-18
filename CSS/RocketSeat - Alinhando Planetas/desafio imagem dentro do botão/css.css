@@ -1,0 +1,13 @@
+button{
+    
+    align-items: center;
+    gap: .4rem;
+    flex-direction: row;
+}
+
+
+button img{
+    height: 2rem;
+    width: 2rem;
+
+}

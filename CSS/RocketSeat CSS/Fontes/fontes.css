@@ -1,0 +1,23 @@
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: oblique ;
+    font-size: large;
+    font-variant: small-caps;
+    
+}
+
+h1{
+    font-stretch: 50%;
+    letter-spacing: 4px; 
+    word-spacing: 1em;
+    line-height: 1.6;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    text-align: justify;
+    text-shadow: 1px 1px 3px red;
+}
+
+h2{
+    font: italic normal bolder normal 3em/1.5 Helvetica, Arial, sans-serif;
+}

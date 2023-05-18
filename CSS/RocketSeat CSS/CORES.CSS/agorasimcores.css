@@ -1,0 +1,23 @@
+*{ margin: 0;
+}
+/*header{
+    height: 200px;
+    border: 5px dashed red;
+    padding: 3px;
+
+    
+}*/
+
+main{
+    background-color: rgb(43,45,55);
+    background-image: url(./bjpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box ;
+    background-attachment: fixed;
+
+    background:  repeating-linear-gradient(red, green,blue,purple), rgb(43,45,55) url(./bjpg.jpg) no-repeat center / 440px content-box scroll;
+
+}

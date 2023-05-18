@@ -1,0 +1,201 @@
+TABELA ESCOLAR 
+
+SELECT = selecionar 
+* = todos os arquivos
+FROM = de onde 
+
+selecionar todos os campos 
+SELECT * FROM ~professor~
+
+selecionar campo especifico
+SELECT ~nome, reponsavel~ FROM ~aluno~
+
+
+selecionar o campo correspondente. no caso se pede para achar o aluno de matricula igual a 1.
+SELECT * From aluno WHERE matricula = 1
+
+
+
+selecionar apenas o nomes que comece com a letra J na pasta dos alunos.para procurar por letra em particular se usa '%j%'
+SELECT * FROM aluno WHERE nome like 'j%'. 
+
+
+
+-------------------------------OPERADORES RELACIONAIS ------------------------------------
+
+=, Igual 
+(FUNCIONA APENAS PARA NUMBER)
+EX: SELECT * From aluno WHERE matricula = 1
+
+----------------------------------------------------------
+
+
+Like 
+
+(APENAS PARA TEXTO) caso não saiba o nome completo colocar % antes ou depois da unica informação que voce tem.
+ex: 'Gabriel%' ( só sei o primeiro nome)
+ex: '%G%' (sei que tem G no nome)
+SELECT * FROM aluno WHERE nome LIKE 'nome do aluno'
+
+
+----------------------------------------------------------
+
+>, Maior que
+
+SELECT * FROM alunos WHERE matricula > 1
+resposta: 2,3 ...
+
+
+----------------------------------------------------------
+
+<, Menor que 
+
+SELECT * FROM alunos WHERE matricula < 3
+resposta: 2,1.
+
+----------------------------------------------------------
+
+>=, Maior ou Igual
+
+SELECT * FROM alunos WHERE matricula >= 3
+resposta: 3,4,5 ....
+
+
+
+----------------------------------------------------------
+
+<=, Menor ou Igual
+
+SELECT * FROM alunos WHERE matricula <= 3
+resposta: 3,2,1.
+
+----------------------------------------------------------
+
+<> Não igual a
+
+SELECT * FROM alunos WHERE matricula <> 1
+resposta: 2,3. (pega todos que não seja igual ao 1)
+
+----------------------------------------------------------
+
+!= Diferente de
+
+SELECT * FROM alunos WHERE matricula != 2
+
+resposta: 1, 3 (pega todos diferentes de 2)
+
+
+
+--------------------------------------OPERADORES MATEMATICOS -----------------------------------------------
+
++, Adição
+
+SELECT * FROM alunos WHERE matricula = 1 + 1 
+
+resposta: 2
+
+----------------------------------------------------------
+
+-, Subtração 
+
+SELECT * FROM aluno WHERE matricula = 2 - 1
+reposta: 1
+
+----------------------------------------------------------
+
+*, Multiplicação
+
+SELECT * FROM aluno WHERE matricula = 1 * 2
+resposta: 2 
+
+----------------------------------------------------------
+
+/,Divisão
+
+SELECT * FROM aluno WHERE matricula = 3 / 2
+reposta: 1
+
+----------------------------------------------------------
+
+%, Modulo
+Modulo é o numero que sobra na divisão.
+SELECT * FROM aluno WHERE matricula = 4%1
+resposta: 1
+
+
+------------------------------ OPERADORES LOGICOS ----------------------------
+
+AND
+
+SELECT * FROM aluno WHERE nome LIKE 'J%' AND matricula < 3
+resposta: 1 jakeline
+
+
+----------------------------------------------------------
+
+OR 
+
+selecione todos os arquivos de aluno na coluna matricula que seja maior que 1 OU o nome comece com j
+SELECT * FROM aluno WHERE matricula > 1 OR nome LIKE 'j%'
+resposta: todos os alunos 
+
+
+----------------------------------------------------------
+
+Reunindo Tabelas 
+
+BETWEEN
+
+
+SELECT * FROM funcionarios WHERE id_funcionario BETWEEN 4 and 7
+resposta: Between serve para pegar entre algo. no caso numeros que estão entre 4 até 7. Pode ser ultilizado o NOT na frente de Between para causar o efeito inverso.
+
+----------------------------------------------------------
+
+
+IN, NOT IN
+
+SELECT * FROM funcionarios WHERE id_departamento IN (1,4,7)
+resposta: IN serve para trazer elemento especifico ( representação acima). NOT IN faz o inverso, traz todos menos os elementos especifico.
+
+
+----------------------------------------------------------
+
+IS NULL e IS NOT NULL
+
+
+
+SELECT * FROM funcionarios WHERE id_departamento IS NULL
+resposta:selecione todos os arquivos de funcionario na coluna id_departamento que seja NULL.podendo usar IS NOT NULL para o efeito oposto.
+
+
+
+---------------------MAIS COMANDOS -----------------------------------------
+
+INSERT INTO
+
+Serve para adicionais mais um cadastro a tabela 
+
+
+INSERT INTO aluno (nome, cpf, responsavel) VALUES ('Maria Luiza', 234452345, 'Joao Carlos')
+reposta: INSERT INTO serve para add mais um cadastro na tabela. tendo que colocar o nome da tabela (ALUNO), campos que serão usados ( NOME, CPF, RESPONSAVEL), e o comando VALUES para atribuir informações ultilizadas nos campos( MARIA, 283238, JOAO).
+
+
+----------------------------------------------------------
+
+UPDATE
+
+
+Serve para alterar a tabela 
+
+UPDATE aluno SET nome='Mariano Grelo', responsavel='lucas seila', cpf=34234234, WHERE matricula =3
+reposta: UPDATE na pasta ALUNO SET nome='', resposavel='',cpf=232323 WHERE(onde) matricula = 3
+
+---------------------------------------------------------------
+DELETE 
+
+
+DELETE FROM aluno WHERE matricula = 3
+
+resposta: serve para deletar um cadastro da tabela.
+

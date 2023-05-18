@@ -1,0 +1,75 @@
+
+/*
+Desafio 1
+*{
+    margin: 0;
+}
+
+header{
+    background: lightcoral;
+    padding: 18;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+
+    
+}
+
+ul li:last-child{
+    background: lightsalmon;
+align-items: center;
+}
+*/
+
+
+/* Desafio 2
+header{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    
+}
+
+h1{
+    height: 100px;
+    width: 20px;
+    padding: 50px;
+    border: 10px solid red;
+    display: flex;
+    justify-content: center;
+    flex-grow:calc(.25);
+    
+   
+}
+
+
+h2{
+    height: 100px;
+    width: 20px;
+    padding: 50px;
+    border: 10px solid blue;
+    display: flex;
+    justify-content:center;
+    flex-grow: calc(1);
+}
+*/

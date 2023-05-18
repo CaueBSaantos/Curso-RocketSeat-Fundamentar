@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+
+div, section{ border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    margin: 8px 0px;
+    padding: 10%;
+    
+    }
+
+    div{
+        margin: 8px;
+    }
+
+section{
+    margin: 8px;
+}
+

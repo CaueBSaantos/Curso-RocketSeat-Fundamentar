@@ -1,0 +1,117 @@
+
+/*
+TRABALHANDO COM FLEX-BORDER
+.box{ display: flex;
+    
+    border:  1px dashed red;
+}
+.box div{
+    border: 1px solid;
+    
+    flex-basis: 30%;
+    
+}
+
+.box div:nth-child(1){
+    height: 50px;
+    height: 0px;
+}
+
+*/
+
+/* TRABALHANDO COM FLEX-GROW
+.box{ display: flex;
+    
+    border:  1px dashed red;
+}
+.box div{
+    border: 1px solid;
+    
+  
+    
+}
+
+.box div:nth-child(3),
+.box div:nth-child(2){
+    flex-grow: 2;
+}
+.box div:nth-child(1){
+    flex-grow: 3;
+}
+*/
+
+/* TRABALHANDO COM FLEX-SHRINK
+.box{
+    display: flex;
+    border:  1px dashed red;
+
+    width: 160px;
+}
+
+.box div{
+    flex-basis: 100%;
+    border: 1px solid;
+}
+
+.box div:nth-child(2),
+.box div:nth-child(3)
+{
+    flex-shrink: 2;
+}
+*/
+
+
+/*  TRABALHANDO COM FLEX SHORTHAND
+.box {
+    display: flex;
+    border: 1px dashed red;
+}
+
+.box div{
+    border: 1px solid;
+    flex: 0 40px 
+    
+}
+
+*/
+
+*{
+    margin: 0;
+    display: flex;
+}
+
+.page{
+    border: 2px solid;
+    min-width: 100vh;
+    display: flex;
+}
+
+aside{
+    background: lightgreen;
+    flex: 1;
+}
+
+main{
+    background: darkcyan;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(1){
+    background: rgb(121, 170, 235);
+    flex: 2;
+    
+}
+
+main section:nth-child(2){
+    background: lightsalmon;
+    flex: 0 200px;
+
+}
+
+main section:nth-child(3){
+    background: lightseagreen;
+    flex: 1;
+
+}

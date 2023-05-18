@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-start;
+    height: 19vh;
+    border: 1px solid red;
+}
+
+.shadow{
+    background-color: pink;
+    border: 1px solid;
+    flex: 1;
+}
+

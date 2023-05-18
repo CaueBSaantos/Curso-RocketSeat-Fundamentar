@@ -1,0 +1,36 @@
+<!-- Crie um formulario de Contato
+
+1. O formulario deverá conter um titulo de nome Contato. 
+Usar fieldset e legend para essa finalidade.
+
+2. O formulario conterá 3 campos 
+    - nome (input texto)
+    - email(input email)
+    - mensagem(textarea)
+
+3. O formulario deverá conter um botão para enviar 
+
+Atenção: O fomulario deverá conter regras de acessibilidade, como label para cada campo,
+por exemplo.
+-->
+
+<form action="">
+    <fieldset>
+        <legend>Contato</legend>
+        <label for="cadastro">Nome</label>
+        <input type="text" name="cadastro" id="cadastro" placeholder="Nome Completo">
+        <br>
+
+        <label for="email">email</label>
+        <input type="email" name="cadastro" id="email" pattern="*@nubank/.com/.br" placeholder="@nubank.com.br"><br>
+
+        <legend>Feedback</legend>
+        <label for="feedback"></label>
+        <textarea name="feedback" id="feedback" name="feedback" cols="30" rows="10"></textarea>
+>
+        <br>
+        <button type="submit" >Enviar</button>
+    </fieldset>
+
+</form>
+

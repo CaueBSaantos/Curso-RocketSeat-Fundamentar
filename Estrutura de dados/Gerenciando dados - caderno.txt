@@ -1,0 +1,18 @@
+Estrutura de dados tem a ver com a gestão das informações da aplicação 
+
+
+Para esse gerenciamento, podemos dividir em 3 etapas:
+
+1. Modelar a estrutura 
+2. das vida a estrutua ( instanciar essa estrutura);
+3. Criar as funcionalidades dessa estrutura.
+ *Exemplo: inserir, excluir, buscar, exibir, contar...
+
+Arrays 
+
+Array, vetor ou arranjo, é uma estrutura amplamente utilizada e implementada em quase todas as linguagens de programação
+
+Umas das estruturas mais basicas,simples de criar e utilizar.
+
+['a', 123, 'b', true] // total de 4 elementos 
+//0,1,2,3  

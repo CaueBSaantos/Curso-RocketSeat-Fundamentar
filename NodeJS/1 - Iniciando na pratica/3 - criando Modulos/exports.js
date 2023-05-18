@@ -1,0 +1,1 @@
+module.exports = "qualquer coisa aqui"
